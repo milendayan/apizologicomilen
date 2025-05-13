@@ -9,4 +9,12 @@ router.post("/animals", (req, res) => {
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));
 });
+
+router.get("/animals", (req, res) => {
+   // const animal = animalSchema(req.body);
+   animalSchema
+        .find()
+        .then((data) => res.json(data))
+        .catch((error) => res.json({ message: error }));
+});
 module.exports = router;

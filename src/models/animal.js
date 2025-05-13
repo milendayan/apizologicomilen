@@ -15,7 +15,7 @@ tipo:{
 },
 fecha:{
     type: Date,
-    required: true,
+    required: false,
 }
 });
 module.exports = mongoose.model("Animal", animalSchema);
